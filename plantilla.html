@@ -1,0 +1,394 @@
+<html lang="es">
+
+<head>
+    <title>Sistema de Plan de Descuentos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <meta name="description" content="Quality Gardian SAC">
+    <meta name="author" content="Quality Guardians SAC">
+
+    <!-- Grupo de Referencia de Estilos Consulta-->
+    <link href="/resources/css/bootstrap-cerulean.min.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/colorbox.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/charisma-app.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/responsive-tables.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/bootstrap-tour.min.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/jquery.noty.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/noty_theme_default.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/elfinder.min.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/elfinder.theme.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/jquery.iphone.toggle.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/uploadify.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/jquery-ui-1.8.21.custom.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/sky-forms.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/chosen.min.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/site.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/datepicker.css" rel="stylesheet" type="text/css" />
+
+    <!-- Seccion de css de la pagina actual -->
+    <link href="/resources/css/pao/app.css" rel="stylesheet" type="text/css" />
+    <!-- /Seccion de css de la pagina actual -->
+
+
+    <link rel="shortcut icon" href="/resources/img/favicon.ico">
+    <style rel="stylesheet" type="text/css">
+        .alert-warning {
+            color: #8a6d3b;
+            background-color: #fcf8e3;
+            border-color: #faebcc;
+        }
+    </style>
+    <script>
+        var urlInicio = 'index.html';
+        var urlBaseAbsoluta = window.location.pathname.split('/')[0] == "" ? "/" : window.location.pathname.split('/')[
+            0];
+        var ws_pao = window.location.pathname.split('/')[0];
+    </script>
+    <!-- Grupo de Referencia de Scripts -->
+    <script type="text/javascript" src="/resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/resources/js/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.noty.js"></script>
+    <script type="text/javascript" src="/resources/js/responsive-tables.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap-tour.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.raty.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.iphone.toggle.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.autogrow-textarea.js"></script>
+    <!--script type="text/javascript" src="~/resources/js/jquery.uploadify-3.1.min.js"></script-->
+    <script type="text/javascript" src="/resources/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/resources/js/funciones.js?v1.6"></script>
+    <script type="text/javascript" src="/resources/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/resources/plugins/dataTables/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="/resources/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="/resources/js/charisma.js"></script>
+    <script src="/resources/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="/resources/js/bootstrap-inputmask.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/resources/plugins/ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Menu corto</span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">
+                <img alt="Logo" src="/resources/img/logo-tr-v3-42.png" class="hidden-xs">
+            </a>
+            <div>
+                <span style="float:right; margin-top: 10px; margin-right: 10px; font-family: Roman;"
+                    class="hidden-sm hidden-xs">
+                    <form action="/Views/index.html" id="logoutForm"><input name="__RequestVerificationToken"
+                            type="hidden"
+                            value="R5yNNulG7PfD2SkSbQLemjBOmPhyRkGpiM-VhsWMqxmdolohDAsK0wB48BI8lM-OpbKk-AWSW2jNPKg8jdWnPab5TyO9HlL4Gb6es511OoA1">
+                        <i class="glyphicon glyphicon-user"></i> Ricardo Warner <i style="font-size:12px;"
+                            class="glyphicon glyphicon-arrow-right"></i>
+                        <a href="javascript:document.getElementById('logoutForm').submit()"
+                            style="color: White;font-size:12px;"> Salir</a>
+                    </form>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="ch-container">
+        <div id="idMenuBar" class="col-sm-3 col-lg-3">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+                    </div>
+                    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="accordion">
+                            <a href="#" class="nav-pills nav-stacked"><i class="glyphicon glyphicon-cog"></i>
+                                <span>
+                                    Plataforma de Atención
+                                </span>
+                            </a>
+                            <ul class="nav nav-pills nav-stacked" style="display:block">
+                                <li id="SOLICITUD_CONSULTA"><a class="ajax-link" href="/consulta.html"><i></i><span>
+                                            Consulta</span></a>
+                                    <ul class="nav nav-pills nav-stacked"></ul>
+                                </li>
+                                <li id="SOLICITUD_BANDEJA" class="active"><a class="ajax-link"
+                                        href="/bandeja.html"><i></i><span> Bandeja</span></a>
+                                    <ul class="nav nav-pills nav-stacked"></ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Contenido Borrar desde aqui para otra plantilla-->
+        <div id="content" class="col-lg-9 col-sm-9">
+
+        </div>
+        <!--/Contenido Borrar hasta aqui para otra plantilla-->
+    </div>
+    </div>
+    <!-- Seccion de Modals -->
+    <div class="simpleModal"></div>
+
+    <!--Creado por QG - Modal de Alerta-->
+    <div class="modal fade modalalertastop" id="ModalMensaje" tabindex="-1" role="dialog" data-backdrop="static"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalalertasancho">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="">
+                        <div class="page-header text-center">
+                            <h4><i style="color: #a94442" class="glyphicon glyphicon-info-sign"></i><span
+                                    class="colortituloseccion"></span></h4>
+                        </div>
+                        <div id="mensajeAlert" class="modal-body alert-danger text-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Aceptar <i
+                            class="glyphicon glyphicon-ok-circle"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Creado por QG - Modal de Conformidad-->
+    <div class="modal fade modalalertastop" id="ModalMensajeConf" tabindex="-1" role="dialog" data-backdrop="static"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalalertasancho">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="">
+                        <div class="page-header text-center">
+                            <h4><i style="color: #a94442" class="glyphicon glyphicon-info-sign"></i><span
+                                    class="colortituloseccion"></span></h4>
+                        </div>
+                        <div id="mensajeAlertconf" class="modal-body alert-success text-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="AceptConf" type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Aceptar <i
+                            class="glyphicon glyphicon-ok-circle"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modalalertastop" id="ModalMensajeConf2" tabindex="-1" role="dialog" data-backdrop="static"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalalertasancho">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="">
+                        <div class="page-header text-center">
+                            <h4><i style="color: #a94442" class="glyphicon glyphicon-info-sign"></i><span
+                                    class="colortituloseccion"></span></h4>
+                        </div>
+                        <div id="mensajeAlertconf2" class="modal-body alert-success text-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+
+                    @if (objListaPer.Where(x => x.boton.Equals(ConstanteSesion.BTN_GRABAR)).Count() > 0)
+                    {
+                    <button id="btnDesistimiento" type="button" class="btn btn-primary btn-xs" data-dismiss="modal"
+                        style="float:left;"> Imprimir formato de desistimiento al trámite </button>
+                    }
+                    <button id="AceptConf2" type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Aceptar <i
+                            class="glyphicon glyphicon-ok-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modalalertastop" id="ModalMensajeConf3" tabindex="-1" role="dialog" data-backdrop="static"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalalertasancho">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="">
+                        <div class="page-header text-center">
+                            <h4><i style="color: #a94442" class="glyphicon glyphicon-info-sign"></i><span
+                                    class="colortituloseccion"></span></h4>
+                        </div>
+                        <div id="mensajeAlertconf3" class="modal-body alert-success text-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+
+                    @if (objListaPer.Where(x => x.boton.Equals(ConstanteSesion.BTN_REJA)).Count() > 0)
+                    { using (Html.BeginForm("solicitudReja", "Reja", FormMethod.Post, new { @class = "form-horizontal",
+                    @id = "frm-datos-afiliado" }))
+                    {
+                    <input type="hidden" id="TipoDocumentoReja" name="TipoDocumentoReja" />
+                    <input type="hidden" id="NumDocumentoReja" name="NumDocumentoReja" />
+                    <button id="btnReja" type="button" class="btn btn-xs btn-success2" data-dismiss="modal"
+                        style="float:left;"> Evaluación Reja </button>
+                    }
+                    }
+                    <button id="AceptConf3" type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Aceptar <i
+                            class="glyphicon glyphicon-ok-circle"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Creado por QG - Modal App-->
+    <div class="modal fade modalalertastop" id="ModalMensajeApp" tabindex="-1" role="dialog" data-backdrop="static"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalalertasancho">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                        style="display:none">&times;</button>
+                    <div class="">
+                        <div class="page-header text-center">
+                            <h4><i style="color: #a94442" class="glyphicon glyphicon-info-sign"></i><span
+                                    id="tituloModalMensaje" class="colortituloseccion"></span></h4>
+                        </div>
+                        <div id="cuerpoModalMensaje" class="modal-body text-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnCancelarModalMensaje" style="float:left" class="btn btn-success btn-xs"
+                        data-dismiss="modal">Cancelar</button>
+                    <button type="button" id="btnAceptarModalMensaje" class="btn btn-primary btn-xs"
+                        data-dismiss="modal">Aceptar <i class="glyphicon glyphicon-ok-circle"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de confirmación -->
+
+    <div class="modal fade modalalertastop" id="ModalMensajeQuestion" tabindex="-1" role="dialog" data-backdrop="static"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalalertasancho">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="">
+                        <div class="page-header text-center">
+                            <h4><i style="color: #a94442" class="glyphicon glyphicon-info-sign"></i><span
+                                    class="colortituloseccion"></span></h4>
+                        </div>
+                        <div id="mensajeAlertQuestion" class="modal-body alert-warning text-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnSi" name="btnSi" class="btn btn-success2 btn-xs" data-dismiss="modal"
+                        style="width:80px;height:30px;">Si <i class="glyphicon glyphicon-ok-circle"></i></button>
+                    <button type="button" id="btnNo" name="btnNo" class="btn btn-primary btn-xs" data-dismiss="modal"
+                        style="width:80px;height:30px;">No <i class="glyphicon glyphicon-remove-circle"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Seccion de Modals -->
+    <script type="text/javascript" src="/resources/js/app.js"></script>
+
+    <!-- Seccion de Scripts de la pagina actual -->
+    <script src="/resources/js/pao/dtTramites.js" type="text/javascript"></script>
+    <script src="/resources/js/pao/dtAfiliado.js" type="text/javascript"></script>
+    <script src="/resources/js/pao/consulta.js" type="text/javascript"></script>
+    <!-- /.Seccion de Scripts de la pagina actual -->
+
+
+    <!-- Grupo de Referencia de Scripts -->
+    <script type="text/javascript">
+        /*Creado por QG*/
+        function alertModal(mensaje) {
+            if (typeof (mensaje) === "undefined") {
+                mensaje = "Se ha producido un error.";
+            }
+            $("#mensajeAlert").html(mensaje);
+            $("#ModalMensaje").modal();
+        }
+
+        function alertaModalConf(mensaje, funcion) {
+            if (typeof (mensaje) === "undefined") {
+                mensaje = "Se ha producido un error.";
+            }
+            $("#mensajeAlertconf").html(mensaje);
+            $("#ModalMensajeConf").modal();
+
+            if (funcion != null) {
+                $(document).off("click", "#AceptConf");
+                $("#AceptConf").click(function () {
+                    window[funcion]();
+                });
+            }
+        }
+
+        function alertaModalConf2(mensaje) {
+            if (typeof (mensaje) === "undefined") {
+                mensaje = "Se ha producido un error.";
+            }
+            $("#mensajeAlertconf2").html(mensaje);
+            $("#ModalMensajeConf2").modal();
+        }
+
+        function alertaModalGen(idModal, idMensaje, mensaje, hidden_data_val) {
+            if (typeof (mensaje) === "undefined") {
+                mensaje = "Se ha producido un error.";
+            }
+            $("#" + idMensaje).html(mensaje);
+            $("#" + idModal).modal();
+            if ($("#" + idModal + "_hidden_data").length > 0 && hidden_data_val) {
+                $("#" + idModal + "_hidden_data").val(hidden_data_val);
+            }
+        }
+
+        function alertModalQuestion(mensaje, funcion) {
+            if (typeof (mensaje) === "undefined") {
+                mensaje = "Se ha producido un error.";
+            }
+            $("#mensajeAlertQuestion").html(mensaje);
+            $("#ModalMensajeQuestion").modal();
+            $(document).off("click", "#btnSi");
+            if (funcion !== null) {
+                $(document).on("click", "#btnSi", function () {
+                    window[funcion]();
+                });
+            }
+        }
+
+        $("#btnDesistimiento").click(function () {
+            $.post("ObtenerAfiliadoDesiste", {
+                cuspp: id_nss,
+                tramite: tramite
+            }, function (html) {
+                $("#main_content").html(html);
+            });
+        });
+
+
+        $("#btnReja").click(function () {
+            $("#TipoDocumentoReja").val($("#TipoDocumento").val());
+            $("#NumDocumentoReja").val($("#NumDocumento").val());
+            $("#frm-datos-afiliado")[0].submit();
+        });
+    </script>
+
+</body>
+<script>
+
+</script>
+
+</html>

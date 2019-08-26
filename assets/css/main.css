@@ -1,0 +1,72 @@
+* 
+{
+    margin: 0;    
+}
+button.btnIngresar:hover {
+    color: black;
+    background-color: #E29E02;
+}
+img 
+{
+    vertical-align:middle;    
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.Estilo1 {
+	color: #FFFFFF;
+	font-weight: bold;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.Estilo2 {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.Estilo0 {
+	color: #FFFFFF;
+	font-size: 10px;
+	font-weight: bold;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#idBody 
+{
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; 
+    font-size: 13px; color: #666; 
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;    
+}
+
+#idBody div 
+{
+    margin-top:5px;    
+}
+
+.btn 
+{
+    display: inline-block!important;
+	background: #fff!important;
+	border: 2px solid #ed2924!important;
+	-webkit-border-radius: 3px!important;
+	border-radius: 3px!important;
+	padding: 2px 2px 2px!important;
+	margin: 0!important;
+	font-size: 12px!important;
+	line-height: 13px!important;
+	min-width: 100px!important;
+	-webkit-box-shadow: 0 1px 1px #ccc!important;
+	box-shadow: 0 1px 1px #ccc!important;
+	outline: none!important;
+	color: #e02924!important;
+	text-align: center!important;
+	text-decoration: none!important;
+	cursor:pointer;
+}

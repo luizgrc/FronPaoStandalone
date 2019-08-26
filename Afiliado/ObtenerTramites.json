@@ -1,0 +1,24 @@
+{
+    "status": 200,
+    "message": "Respuesta exitosa",
+    "content": [
+        {
+            "NombreTramite": "CAMBIO DE FONDO",
+            "TipoDocumento": "D.N.I.",
+            "NumeroDocumento": "45271566",
+            "Nombre": "ZIVVI CANO GABRIELA ANGELA",
+            "FechaRegistro": null,
+            "Estado": "CUENTAS",
+            "FechaEstado": "22/10/2018"
+        },
+        {
+            "NombreTramite": "CAMBIO DE FONDO",
+            "TipoDocumento": "D.N.I.",
+            "NumeroDocumento": "45271566",
+            "Nombre": "ZIVVI CANO GABRIELA ANGELA",
+            "FechaRegistro": null,
+            "Estado": "CUENTAS",
+            "FechaEstado": "22/10/2018"
+        }
+    ]
+}

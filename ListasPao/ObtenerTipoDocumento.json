@@ -1,0 +1,30 @@
+{
+    "status": 200,
+    "message": "Respuesta exitosa",
+    "content": [
+        {
+            "TipoDocumentoID": "00",
+            "Descripcion": "D.N.I."
+        },
+        {
+            "TipoDocumentoID": "01",
+            "Descripcion": "Carnet Extranjeria"
+        },
+        {
+            "TipoDocumentoID": "02",
+            "Descripcion": "Carnet Militar/Policial"
+        },
+        {
+            "TipoDocumentoID": "03",
+            "Descripcion": "Lib.Adolesc.Trab."
+        },
+        {
+            "TipoDocumentoID": "04",
+            "Descripcion": "Pasaporte"
+        },
+        {
+            "TipoDocumentoID": "06",
+            "Descripcion": "Carné de Identidad para Extranjeros"
+        }
+    ]
+}

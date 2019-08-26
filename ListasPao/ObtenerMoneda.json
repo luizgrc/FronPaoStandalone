@@ -1,0 +1,14 @@
+{
+    "status": 200,
+    "message": "Respuesta exitosa",
+    "content": [
+        {
+            "MonedaID": "1",
+            "Descripcion": "Soles"
+        },
+        {
+            "MonedaID": "2",
+            "Descripcion": "Dólares"
+        }
+    ]
+}

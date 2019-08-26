@@ -1,0 +1,43 @@
+{
+    "status": 200,
+    "message": "Respuesta exitosa",
+    "content": [
+        {
+            "COD_VALOR": "0000",
+            "DES_VALOR": "SIN INFORMACIÓN"
+        },
+        {
+            "COD_VALOR": "0001",
+            "DES_VALOR": "EFERMEDADES INFECCIOSAS Y PARASITARIAS (001 - 139)"
+        },
+        {
+            "COD_VALOR": "0002",
+            "DES_VALOR": "TUMORES (140 - 239)"
+        },
+        {
+            "COD_VALOR": "0003",
+            "DES_VALOR": "ENFERMEDADES GLÁNDULAS ENDOCRINAS, NUTRIC., METAB. Y TRAST. INMUNOLO"
+        },
+        {
+            "COD_VALOR": "0004",
+            "DES_VALOR": "ENFERMEDADES DE LA SANGRE Y DE LOS ÓRGANOS HEMATOPOYÉTICOS (280 - 289)"
+        },
+        {
+            "COD_VALOR": "0005",
+            "DES_VALOR": "TRASTORNOS MENTALES (290 - 319)"
+        },
+        {
+            "COD_VALOR": "0006",
+            "DES_VALOR": "ENF. SIST. NERVIOSO Y DE LOS ÓRGANOS DE LOS SENTIDOS (320 - 389)"
+        },
+        {
+            "COD_VALOR": "0007",
+            "DES_VALOR": "ENFERMEDADES DEL APARATO CIRCULATORIO (390 - 459)"
+        },
+        {
+            "COD_VALOR": "0017",
+            "DES_VALOR": "TRAUMATISMOS Y ENVENAMIENTOS (800 - 999)"
+        }
+    ]
+}
+ 

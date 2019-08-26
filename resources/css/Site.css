@@ -1,0 +1,102 @@
+﻿input, textarea
+{
+    padding:0px 5px 0px 5px;    
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 5px 0 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.modal-dialog1 {
+            width: 45%;           
+            margin: 4% auto;
+        }
+        .centrartd 
+        {
+                word-wrap: break-word;
+        } 
+        
+.header_titulo {
+  font-size:12px;
+}
+
+.premium_header{
+    color:	#D5AD6D; /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent),-webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.box-estado
+{
+    margin-top:7px;
+    height:20px;
+    float:right;
+    margin-bottom:7px;
+}
+.box-estado > table
+{
+    width:auto;
+    float:right; 
+}
+.centrartd
+{
+    text-align: center;
+}
+
+.derechatd
+{
+    text-align: right;
+}
+
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.simpleModal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/loading.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .simpleModal {
+    display: block;
+}
+
+
+.btn-success2 {
+    background-image: -webkit-linear-gradient(#88c149, #73a839 60%, #699934);
+    background-image: -o-linear-gradient(#88c149, #73a839 60%, #699934);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#88c149), color-stop(60%, #73a839), to(#699934));
+    background-image: linear-gradient(#88c149, #73a839 60%, #699934);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff88c149', endColorstr='#ff699934', GradientType=0);
+    -webkit-filter: none;
+    filter: none;
+    border-bottom: 1px solid #59822c;
+}
+
+.btn-success2 {
+    color: #ffffff;
+    background-color: #73a839;
+    border-color: #73a839;
+}

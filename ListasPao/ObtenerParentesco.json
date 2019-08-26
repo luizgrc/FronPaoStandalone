@@ -1,0 +1,26 @@
+{
+    "status": 200,
+    "message": "Respuesta exitosa",
+    "content": [
+        {
+            "ParentescoID": "CO",
+            "Descripcion": "Conyuge"
+        },
+        {
+            "ParentescoID": "CB",
+            "Descripcion": "Conviviente"
+        },
+        {
+            "ParentescoID": "HI",
+            "Descripcion": "Hijo"
+        },
+        {
+            "ParentescoID": "Padre / Madre",
+            "Descripcion": "PM"
+        },
+        {
+            "ParentescoID": "Otros",
+            "Descripcion": "XX"
+        }
+    ]
+}

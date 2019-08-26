@@ -1,0 +1,31 @@
+{
+    "status": 200,
+    "message": "Respuesta exitosa",
+    "content": [
+        {
+            "cod_patronal": "357035",
+            "razon_social": "CORPORACION FUNERARIA HERNANDEZ S.A.C.",
+            "id_patrono": "20495169082"
+        },
+        {
+            "cod_patronal": "356782",
+            "razon_social": "NUEVO MILENIO E.I.R.L.",
+            "id_patrono": "20453977260"
+        },
+        {
+            "cod_patronal": "362025",
+            "razon_social": "FUNERARIAS RODRIGUEZ S.R.L.",
+            "id_patrono": "20571166098"
+        },
+        {
+            "cod_patronal": "364859",
+            "razon_social": "FUNERARIA SANTA ROSA DEL NORTE CHICO S.A.C.",
+            "id_patrono": "20571337755"
+        },
+       {
+            "cod_patronal": "494606",
+            "razon_social": "OTAZU AREVALO JERSON                                                                                ",
+            "id_patrono": "10296015216"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "status": 200,
+    "message": "Respuesta exitosa",
+    "content": [
+        {
+            "SexoID": "F",
+            "Descripcion": "Femenino"
+        },
+        {
+            "SexoID": "M",
+            "Descripcion": "Masculino"
+        }
+    ]
+}
+ 

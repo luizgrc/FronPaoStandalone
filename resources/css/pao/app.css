@@ -1,0 +1,76 @@
+﻿.row{
+    margin-left:0 !important;
+    margin-right:  0 !important;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+}
+
+.file-input-label {
+    padding: 0px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+}
+
+#tblDocumentos thead > tr{
+    background-color : #F2F2F2;
+
+}
+#tblDocumentos thead > tr > td{
+    text-align : center;
+    vertical-align : middle;
+
+}
+#tblDocumentos tbody > tr > td{
+    vertical-align : middle;
+    text-align : center;
+
+}
+#tblDocumentos tbody > tr > td:nth-last-child(3){
+    text-align : right !important;
+}
+#tblDocumentos tbody > tr > td:nth-last-child(2){
+    text-align : center !important;
+}
+.chosen-container{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.row{
+    padding-top: 3px;
+}
+.titulo-sucess{
+    color :#468847 ;
+    margin-left : 1%;
+}
+.titulo-warning {
+    color: #8a6d3b;
+    margin-left: 1%;
+}
+.titulo-error{
+    color : #b94a48 ;
+    margin-left : 1%;
+}

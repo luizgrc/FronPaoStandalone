@@ -1,0 +1,31 @@
+{
+    "status": 200,
+    "message": "Respuesta exitosa",
+    "content": [
+        {
+            "EstadoCivilID": "7",
+            "Descripcion": "CASADO(A)"
+        },
+        {
+            "EstadoCivilID": "5",
+            "Descripcion": "DIVORCIADO(A)"
+        },
+        {
+            "EstadoCivilID": "2",
+            "Descripcion": "CONVIVIENTE"
+        },
+        {
+            "EstadoCivilID": "5",
+            "Descripcion": "SOLTERO(A)"
+        },
+        {
+            "EstadoCivilID": "1",
+            "Descripcion": "VIUDO(A)"
+        },
+        {
+            "EstadoCivilID": "4",
+            "Descripcion": "NO ESPECIFICA"
+        }
+    ]
+}
+ 

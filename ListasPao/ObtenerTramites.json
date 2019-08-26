@@ -1,0 +1,15 @@
+{
+    "status": 200,
+    "message": "Respuesta exitosa",
+    "content": [
+        {
+            "ID_TRAMITE": 1,
+            "DESCRIPCION": "AVISO DE SINIESTRO"
+        },
+        {
+            "ID_TRAMITE": 2,
+            "DESCRIPCION": "GASTO DE SEPELIO"
+        }
+    ]
+}
+ 
