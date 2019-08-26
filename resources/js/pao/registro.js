@@ -301,53 +301,54 @@ function fileDocChange(fileInput , name) {
     $('.btn-add').on('click', function () {
         var formchildrengastos = $(this).closest('.row').find('.input').children().not('.chosen-container').not('.btn-add');
         var numrow = $('#tblDocumentos tbody tr').not('#rowTotal').length +1;
-        var row = '<tr><td>' + numrow + '</td>';
         var condicion = "1";
+        var tipDoc = $('#sltTipoDoc option:selected').text();
+        var numDoc = $('#nDoc').val();
+        var fecEmision = $('#fechEmision').val();
+        var tipoMOneda = $('#sltTipoMoneda option:selected') .text();
+        var monto = $('#txtMonto').val();
+
 
         $.each(formchildrengastos, function (index, item) {
             if ($(item).val() === "") {
                 condicion = "0"
             }
-            row += '<td>' + $(item).val() + '</td>'
-
-        });
-
-        row +=
-                 '<td >' +
-                    '<span style="font-weight: bold;vertical-align:middle;">3.21</span>' +
-                 '</td>' +
-                 '<td >' +
-                    '<span style="font-weight: bold;vertical-align:middle;">99,999</span>' +
-                 '</td>' +
-                 '<td >' +
-                    '<span style="font-weight: bold;vertical-align:middle;">NO</span>' +
-                 '</td>' +
-                 '<td >' +
-                    '<a  class="btn btn-round btn-default" onclick="cargarBoleta(this)">' +
-                        '<span class="glyphicon glyphicon-paperclip"></span>' +
-                    '</a>&nbsp;' +
-                    '<a class="btn btn-round btn-default" onclick="deleterow(this)">' +
-                        '<span class="glyphicon glyphicon-minus"></span>' +
-                    '</a>' +
-                 '</td>' +
+        }); 
+        var row ='<tr>'+
+                    '<td>' + numrow + '</td>' +
+                    '<td>' + tipDoc + '</td>' +
+                    '<td>' + numDoc + '</td>' +
+                    '<td>' + fecEmision + '</td>' +
+                    '<td>' + tipoMOneda + '</td>' +
+                    '<td style="text-align: right;">' + monto + '</td>' +
+                    '<td style="text-align: right;" >' +
+                        '<span style="font-weight: bold;vertical-align:middle;">3.21</span>' +
+                    '</td>' +
+                    '<td style="text-align: right;">';
+                        if($('#sltTipoMoneda').val() == 1){ 
+                            row += '<span style="vertical-align:middle;">'+ monto +'</span>';
+                        }else{
+                            row += '<span style="vertical-align:middle;">'+ (monto / 3.21).toFixed(2) +'</span>';
+                        }
+                        
+                    row +='</td>' +
+                    '<td >' +
+                        '<span style="font-weight: bold;vertical-align:middle;">NO</span>' +
+                    '</td>' +
+                    '<td >' +
+                        '<a  class="btn btn-round btn-default" onclick="cargarBoleta(this)">' +
+                            '<span class="glyphicon glyphicon-paperclip"></span>' +
+                        '</a>&nbsp;' +
+                        '<a class="btn btn-round btn-default" onclick="deleterow(this)">' +
+                            '<span class="glyphicon glyphicon-minus"></span>' +
+                        '</a>' +
+                    '</td>' +
                 '</tr>';
-
-        var rowTotal = '<td colspan="3" style="text-align: left;border: 0;background-color:#e8cd04 !important;">' +
-                            '<span style="font-weight: bold;vertical-align:middle;background-color:#e8cd04 !important;">Total : 999,999.99</span>' +
-                            '<span style="font-weight: bold;vertical-align:middle;margin-left: 10%;background-color:#e8cd04 !important;"">Saldo : 999,999.99</span>' +
-                        '</td>' +
-                        '<td style="border: 0;background-color:#e8cd04 !important;"></td>' +
-                        '<td style="border: 0;text-align: right;background-color:#e8cd04 !important;">' +
-                            '<span style="font-weight: bold;vertical-align:middle;">Total</span>' +
-                        '</td>' +
-                        '<td style="background-color:#e8cd04 !important;"></td>' +
-                        '<td colspan="2" style="background-color:#e8cd04 !important;"></td>';
 
             if(condicion === "1"){
                 $('#tblDocumentos tbody').append(row);
-                $('#tblDocumentos tbody tr td').get(5).style.textAlign = "right";
-                $('#tblDocumentos tbody tr td').get(6).style.textAlign = "right";
-                $('#tblDocumentos tbody tr td').get(7).style.textAlign = "right";
+                calcularTotal();
+                
             } else {
                 app.mensajes.error("Correccion", 'Campos necesarios faltantes', "Aceptar", null);
             }
@@ -356,8 +357,22 @@ function fileDocChange(fileInput , name) {
     
     });
 
+    function calcularTotal(){
+        var montospen = $('#tblDocumentos tbody tr td:nth-child(8)');
+        var suma = 0;
+        
+        $.each(montospen, function (index, item) { 
+            suma += Number(item.textContent);
+        });
+        $('#monTotal').text(suma.toFixed(2))
+    }
     function deleterow(btnrow) {
         $(btnrow).closest('tr').remove();
+        calcularTotal();
+    }
+    function varificaExisteBol(tipDoc , numDoc){
+        var tipsDocumentos = $('#tblDocumentos tbody tr td:nth-child(2)');
+        var numsDocumentos = $('#tblDocumentos tbody tr td:nth-child(3)');
     }
 
     function verBeneficiarios(check) {

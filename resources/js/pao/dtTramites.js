@@ -11,7 +11,7 @@ function dtTramites(tramites) {
                 '</div>' +
             /* Box - Content */
             '<div class="box-content">' +
-                    '<table class="table table-striped table-bordered responsive">' +
+                    '<table id="tblTramites" class="table table-striped table-bordered responsive">' +
                     '<thead style="background-color:#F2F2F2;">' +
                         '<tr>' +
                             '<td style="text-align: center; font-weight: bold;">Trámite</td>' +
